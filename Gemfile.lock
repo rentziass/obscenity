@@ -65,6 +65,3 @@ DEPENDENCIES
   rake
   rdoc (~> 3.12)
   shoulda
-
-BUNDLED WITH
-   1.10.0
