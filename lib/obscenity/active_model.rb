@@ -8,7 +8,7 @@ if defined?(ActiveModel)
             object = record.respond_to?(:[]) ? record[attribute] : record.send(attribute)
             object = Obscenity.replacement(options[:replacement]).sanitize(object)
           else
-            record.errors.add(attribute, options[:message] || 'cannot be profane') if Obscenity.profane?(value)
+            record.errors.add(attribute, options[:message] || 'sembra contenere parole offensive.') if Obscenity.profane?(value)
           end
         end
         
